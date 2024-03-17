@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry print</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    body {
+      background-color: #faf6f6;
+      font-family: Arial, sans-serif;
+      color: #e74c3c;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #e74c3c;
+      color: #faf6f6;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #e74c3c;
+      font-size: 24px !important;
+      line-height: 50px;
+      color: black !important;
+    }
+    p {
+      line-height: 1.6;
+    }
+    footer {
+      background-color: #e74c3c;
+      color: #faf6f6;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+<body class="bg-[#faf6f6] max-h-[100vh]">
+
+    <div id="app">
+        <div class="w-[100%] drop-shadow-md bg-white  flex flex-row justify-between p-[20px]">
+            <h2 class="font-bold text-[22px] text-black">Print geometry</h2>
+            <h1 class="text-[22px] font-bold text-black">About</h1>
+         
+            <div class="second">
+                <a href="index.html" class="text-black">Print geometry</a>
+            </div>
+
+        </div>
+        <div class="w-[100%] h-[92vh]" @click="handleClick" style="position: relative;">
+            <div class="container">
+                <section>
+                  <h2>Introduction</h2>
+                  <p>Welcome to the About page of the Parallelogram and Circle Creator! This project is the brainchild of Serhii Ptitsyn, designed to demonstrate a fascinating aspect of geometry through programming.</p>
+                </section>
+              
+                <section>
+                  <h2>Project Overview</h2>
+                  <p>The Parallelogram and Circle Creator is a web-based application that dynamically generates parallelograms and circles based on three user-defined points. By leveraging mathematical principles and computational algorithms, this application provides an interactive and visual representation of geometric concepts.</p>
+                </section>
+              
+                <section>
+                  <h2>Features</h2>
+                  <ul>
+                    <li><strong>Dynamic Generation:</strong> The application allows users to specify three points on a coordinate plane. Upon inputting these points, the program dynamically constructs a parallelogram and a circle that are uniquely defined by the given points.</li>
+                    <li><strong>Interactive Visualization:</strong> Users can interact with the generated shapes, exploring their properties and relationships. The application provides tools for manipulating the shapes, such as translation, rotation, and scaling, allowing users to observe how changes in the input points affect the resulting geometries.</li>
+                    <li><strong>Educational Value:</strong> Beyond its interactive features, the Parallelogram and Circle Creator serves as an educational tool for learning about geometric concepts. Through experimentation and exploration, users can deepen their understanding of parallelograms, circles, and the mathematical principles governing their construction.</li>
+                  </ul>
+                </section>
+              
+                <section>
+                  <h2>About the Author</h2>
+                  <p><strong>Serhii Ptitsyn</strong> is the creative mind behind the Parallelogram and Circle Creator. With a passion for both mathematics and programming, Serhii embarked on this project to combine his interests and share his knowledge with others.</p>
+                  <p>As the author of this project, Serhii's goal is to inspire curiosity and foster a deeper appreciation for the beauty of mathematics. Through his work, he aims to make complex concepts accessible and engaging to learners of all backgrounds.</p>
+                </section>
+              </div>
+              
+              <footer>
+                <p>Contact Serhii Ptitsyn: <a href="mailto:serhiiptitsyn@example.com" style="color: #faf6f6;">serhiiptytsyn0409@gmail.com</a></p>
+              </footer>
+          
+        </div>
+
+    </div>
+</body>
+
+</html>
